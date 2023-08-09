@@ -1,0 +1,31 @@
+<%- include("partials/header"); -%>
+
+<div>
+    <!-- Compose header section -->
+    <header class="compose">
+        <!-- Form to create a new blog post -->
+        <form class="" action="/compose" method="post" enctype="multipart/form-data">
+            <!-- Banner section for uploading an image -->
+            <div class="banner">
+                <!-- File input for image upload (hidden) -->
+                <input type="file" accept="image/*" id="banner-upload" name="postImage" hidden>
+                <!-- Label to trigger file input selection -->
+                <label for="banner-upload" class="banner-upload-btn"><img src="img/upload.png" alt=" "></label>
+            </div>
+        
+            <!-- Blog post input fields -->
+            <div class="blog">
+                <!-- Textarea for entering the blog post title -->
+                <textarea type="text" class="title" placeholder="Blog title..." name="postTitle"></textarea>
+                <!-- Textarea for entering the blog post content with bold font style -->
+                <textarea type="text" class="article" placeholder="Start writing here..." name="postBody" style="font-weight: bold;"></textarea>
+            </div>
+        
+            <!-- Blog post options and publish button -->
+            <div class="blog-options">
+                <!-- Submit button for publishing the blog post with bold font style -->
+                <button class="btn btn-primary" type="submit" name="button" style="font-weight: 700;">Publish</button>
+            </div>
+        </form>
+    </header>
+</div>

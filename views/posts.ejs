@@ -1,0 +1,22 @@
+<%- include("partials/header"); -%>
+
+<!-- Main content section -->
+<div>
+  <!-- Container for the post details and delete button -->
+  <div style="position: relative;">
+    <!-- Delete button positioned on the top right corner -->
+    <form action="/posts/<%= post.title %>/delete" method="POST" style="position: absolute; top: 20px; right: 20px;">
+      <button type="submit" style="background-color: #e33813; color: #fff; padding: 8px 16px; border: none; border-radius: 4px; cursor: pointer; font-weight: bold;">Delete</button>
+    </form>
+
+    <!-- Header for displaying the post details -->
+    <header class="main" style="padding-top: 30px; padding-left: 50px;">
+      <!-- Display the post title with bold font style and color #e33813 -->
+      <h1 style="margin-bottom: 20px; font-weight: bold; color: #e33813;"><%= post.title %></h1>
+      <!-- Display the post image with height 300px, width 400px, margin, and border style -->
+      <img src="/uploads/<%= post.image %>" alt="Post Image" style="height: 300px; width: 400px; margin-bottom: 20px; border: 1px solid #e33813;">
+      <!-- Display the post content with bold font style and black color -->
+      <p style="font-weight: bold; color: black;"><%= post.content %></p>
+    </header>
+  </div>
+</div>
