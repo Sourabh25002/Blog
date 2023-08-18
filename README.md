@@ -1,8 +1,7 @@
 # Unveiling the Blogging Odyssey:
 
 # 🎨 Frontend Enchantment: 
-  Crafted with HTML, CSS, and JavaScript, the website beckons with an inviting design. EJS modules infuse dynamic charm into the frontend pages, weaving a tapestry of interactive experiences. Users are drawn into a world of creative expression and       
-  engagement.
+  Crafted with HTML, CSS, and JavaScript, the website beckons with an inviting design. EJS modules and Bootstrap combine to infuse dynamic charm into the frontend pages, weaving a tapestry of interactive experiences. Users are drawn into a world of creative expression and engagement.
 
 # 🛠️ Mighty Backend Backbone: 
   Powering this journey is Node.js and Express, a robust duo that creates a solid foundation. Leveraging REST APIs, these backend technologies breathe life into the website's functionality. The symphony of actions, from uploading images to composing and 
